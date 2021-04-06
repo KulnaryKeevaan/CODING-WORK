@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title> Logical Operators </title>
+</head>
+<body>
+     <script type="text/javascript">
+         //this checks if a number is divisible by 2 and 5 and 2 or 5
+         var no1 = parseInt(prompt('Enter a number'));
+         var res1 = no1 % 2== 0; 
+         var res2 = no1 % 5== 0;
+         alert(no1 + 'divisible by 2 and 5' +(res1 && res2))
+         alert(no1 + 'divisible by 2 or 5' +(res1 || res2))
+     </script>
+
+     <script type="text/javascript">
+         //this checks if you can vote or not
+         var age = parseInt(prompt('Enter your age to check your voters eligibility'));
+         // you can use age>=18? or if(age>=18) and else 
+         if (age>=18)
+         alert('You can vote')  
+         else
+         alert('You can not vote');    
+     </script>
+
+     <script type="text/javascript">
+         //this is the homework. it asks for 2 numbers and it well tell which is bigger and which is smaller  
+         var number1 = parseInt(prompt('Enter a number')); 
+         var number2 = parseInt(prompt('Enter another number'));
+
+         if (number1>number2) 
+         alert(number1+ 'is bigger and' +number2+ 'is smaller.')
+         else
+         alert(number2+ 'is bigger and' +number1+ 'is smaller.');   
+     </script>
+
+<h1>Logical Operators</h1>
+<h1>Ternary Operators</h1>
+</body>
+</html>
