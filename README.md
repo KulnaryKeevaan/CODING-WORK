@@ -1,2 +1,2 @@
 # CODING-WORK
-This is my coding work from the CodingHero course.
+This is my coding work from myCodingHero course. It includes images and HTML files from each day.
