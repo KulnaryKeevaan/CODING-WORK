@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JS Day 7 </title>
+</head>
+<body>
+<div>
+  <p id='time'>Time : </p>
+  <h3>Click the button to display the current time on the screen</h3>
+  <button onclick="clicked()">CLICK ME</button>  
+</div>
+<script type="text/javascript">
+ //shows the time
+ function clicked() { 
+ var ele=document.getElementById('time'); 
+ ele.innerHTML='Time : '+ new Date().toLocaleTimeString(); 
+ ele.style.color='crimson'; 
+ document.body.style.backgroundColor='#09A999';   
+}   
+</script>
+
+</body>
+</html>
