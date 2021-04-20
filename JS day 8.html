@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> JS day 8 </title>
+</head>
+<body onload='myClock()'>
+<p> A script on this page starts the clock</p>
+<div> <button onclick="stop()">STOP THE CLOCK</button> <button onclick="new1()">Alertbox</button> </div>
+<p id="demo"> </p>
+<script type="text/javascript">
+// this is a clock program
+// this code starts the clock
+var myVar= setInterval(myClock, 1000);	
+function myClock() {
+var d= new Date();
+document.getElementById('demo').innerHTML = "Time: "+d.toLocaleTimeString();
+}
+//this stops the clock
+function stop() 
+{
+clearInterval(myVar);
+document.getElementById("demo").innerHTML = "THE CLOCK HAS BEEN STOPPED!";	
+}
+
+var myVar1;
+
+function new1() { myVar1 = setTimeout(alertFunc, 3000); }
+
+function alertFunc() { alert("Hello!"); }
+
+var myWindow = window.open("","","width=200, height=100");
+
+myWindow.document.write("<p> This is 'myWindow' </p>")
+
+setTimeout(function() {myWindow.close()} , 3000);
+</script>
+
+</body>
+</html>
